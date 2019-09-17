@@ -1,4 +1,4 @@
 # TxtImg
 
-A tool to easily create text-based images (e.g. images that primarily contain text).
+A library to easily create text-based images (e.g. images that primarily contain text).
 

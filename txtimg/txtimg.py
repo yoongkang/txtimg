@@ -2,6 +2,7 @@ from PIL import ImageFont, Image, ImageDraw
 import textwrap
 import io
 import math
+from pathlib import Path
 
 
 class TxtImg:
@@ -41,7 +42,8 @@ class TxtImg:
         return "\n\n".join(["\n".join(x) for x in wrapped_paragraphs])
 
     def _default_font(self) -> ImageFont:
-        return ImageFont.truetype("./fonts/Roboto-Regular.ttf", size=16)
+        filename = str((Path(__file__).parent / "fonts/Roboto-Regular.ttf").absolute())
+        return ImageFont.truetype(filename, size=16)
 
     def _default_img(self, formatted_text) -> Image:
         dimensions = self._img_dimensions(formatted_text)
