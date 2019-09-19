@@ -5,11 +5,12 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="txtimg",
-    version="0.0.1",
+    version="0.0.2",
     author="Yoong Kang Lim",
     author_email="yoongkang.lim@gmail.com",
     description="A library to easily create text-based images (e.g. images that primarily contain text).",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/yoongkang/txtimg",
     packages=setuptools.find_packages(),
     include_package_data=True,
