@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/yoongkang/txtimg",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    install_requires=["Pillow>=7.2,<7.3"],
+    install_requires=["Pillow>=7.2,<8.2"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
