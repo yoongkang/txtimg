@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="txtimg",
-    version="0.0.8",
+    version="0.0.9",
     author="Yoong Kang Lim",
     author_email="yoongkang.lim@gmail.com",
     description="A library to easily create text-based images (e.g. images that primarily contain text).",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/yoongkang/txtimg",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    install_requires=["Pillow>=7.2,<8.2"],
+    install_requires=["Pillow"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
